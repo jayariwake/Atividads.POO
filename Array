@@ -1,1 +1,33 @@
+//1.Criar um vetor com 10 idades e exibir em tela as idades maiores
+//que 18 anos.
+public class Idades {
+    public static void main(String[] args) {
 
+        int[] idades = {13, 20, 26, 18, 31, 16, 22, 41, 19, 23};
+
+        System.out.println("Idades maiores que 18 anos:");
+        for (int i = 0; i < idades.length; i++) {
+            if (idades[i] > 18) {
+                System.out.println(idades[i]);
+            }
+        }
+    }
+}
+
+//2.Criar um vetor com 4 notas e exibir em tela a média aritmética
+//das notas.
+    public static void main(String[] args) {
+        
+        double[] notas = {8.0, 8.5, 7.5, 9.0};
+
+        double soma = 0;
+
+        for (int i = 0; i < notas.length; i++) {
+            soma += notas[i];
+        }
+
+        double media = soma / notas.length;
+
+        System.out.println("A média das notas é: " + media);
+    }
+}
