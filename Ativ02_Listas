@@ -1,0 +1,17 @@
+1) Suponha que você esteja criando um app para anotar os pedidos dos clientes em um restaurante. Seu app precisa de uma lista de  pedidos. Os garçons adicionam os pedidos a essa lista e os chefes os 
+retiram da lista. Os garçons colocam os pedidos no final da lista e os chefes retiram os pedidos do começo dela para cozinhá-los. Você usaria um array ou uma lista encadeada para implementar o app? 
+Justifique.
+Uma lista encadeada. Uma vez que,os garçons irão "criar" um novo nó com o respectivo elemento, o qual terá um ponteiro nulo. Já os chefes irão colocar o head recebendo o ponteiro do primeiro nó e,
+assim, o nó será desalocado.
+
+ 2) Imagine que o Instagram guarda uma lista de usuários. Quando alguém tenta acessá-lo, uma busca é feita pelo nome de usuário. Se o nome da pessoas está na lista, ela pode continuar o acesso. As 
+pessoas usam o Instagram com muita frequência, então existem muitas buscas nessa lista.  
+Presuma que o Instagram use um algoritmo de busca que requer acesso aleatório, sendo que é necessário ser capaz de acessar o meio da lista de nomes instantaneamente. Sabendo disso, você implementaria 
+essa lista usando um array ou uma lista encadeada?
+Um array. Pois é o mais eficiente para fazer a leitura, com a vantagem de acessar a posição desejada instantâneamente ou de um elemento aleatório, por exemplo. Além de fazer um melhor aproveitamento 
+da memória do computador.
+
+3) As pessoas se inscrevem no Instagram com muita frequência. Suponha que você decida usar um array para armazenar a lista de usuários. Quais as desvantagens de um array em relação às inserções? 
+O que acontece quando você adiciona novos usuários em um array?
+O ideal seria uma listas encadeada. Porém, com o Array é necessário saber o índice da posição, ou seja, início, meio ou fim, determinando um local específico. Já ao adiconar novos usuários, o 
+Array poderá estar cheio e será necessário criar um novo, o que demonstra a vantagem das Listas na parte de inserção e também remoção.
